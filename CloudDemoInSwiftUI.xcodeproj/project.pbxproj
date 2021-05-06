@@ -14,6 +14,9 @@
 		60AC83BE2644193E00558965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AC83BD2644193E00558965 /* Assets.xcassets */; };
 		60AC83C12644193E00558965 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60AC83C02644193E00558965 /* Preview Assets.xcassets */; };
 		60AC83C42644193E00558965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60AC83C22644193E00558965 /* LaunchScreen.storyboard */; };
+		60AC83CF2644194D00558965 /* CloiudKitViewMODEL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83CC2644194D00558965 /* CloiudKitViewMODEL.swift */; };
+		60AC83D02644194D00558965 /* CloudModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83CD2644194D00558965 /* CloudModel.swift */; };
+		60AC83D12644194D00558965 /* cloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AC83CE2644194D00558965 /* cloudView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		60AC83C02644193E00558965 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60AC83C32644193E00558965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60AC83C52644193E00558965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60AC83CC2644194D00558965 /* CloiudKitViewMODEL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloiudKitViewMODEL.swift; sourceTree = "<group>"; };
+		60AC83CD2644194D00558965 /* CloudModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudModel.swift; sourceTree = "<group>"; };
+		60AC83CE2644194D00558965 /* cloudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cloudView.swift; sourceTree = "<group>"; };
+		60AC83D426441A5600558965 /* CloudDemoInSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudDemoInSwiftUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +65,13 @@
 		60AC83B32644193D00558965 /* CloudDemoInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				60AC83D426441A5600558965 /* CloudDemoInSwiftUI.entitlements */,
 				60AC83B42644193D00558965 /* AppDelegate.swift */,
 				60AC83B62644193D00558965 /* SceneDelegate.swift */,
 				60AC83B82644193D00558965 /* ContentView.swift */,
+				60AC83CC2644194D00558965 /* CloiudKitViewMODEL.swift */,
+				60AC83CD2644194D00558965 /* CloudModel.swift */,
+				60AC83CE2644194D00558965 /* cloudView.swift */,
 				60AC83BD2644193E00558965 /* Assets.xcassets */,
 				60AC83C22644193E00558965 /* LaunchScreen.storyboard */,
 				60AC83C52644193E00558965 /* Info.plist */,
@@ -148,6 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AC83D12644194D00558965 /* cloudView.swift in Sources */,
+				60AC83CF2644194D00558965 /* CloiudKitViewMODEL.swift in Sources */,
+				60AC83D02644194D00558965 /* CloudModel.swift in Sources */,
 				60AC83B52644193D00558965 /* AppDelegate.swift in Sources */,
 				60AC83BC2644193D00558965 /* CloudDemoInSwiftUI.xcdatamodeld in Sources */,
 				60AC83B72644193D00558965 /* SceneDelegate.swift in Sources */,
@@ -290,9 +304,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudDemoInSwiftUI/CloudDemoInSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudDemoInSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = DD73F8592Z;
+				DEVELOPMENT_TEAM = 6G2HJ55BF8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CloudDemoInSwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudDemoInSwiftUI/CloudDemoInSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CloudDemoInSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = DD73F8592Z;
